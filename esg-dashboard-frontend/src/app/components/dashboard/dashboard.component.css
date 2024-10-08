@@ -1,0 +1,132 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 8px;
+  background-color: #f5f5f5;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 10px;
+}
+
+.view-toggle button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.view-toggle button.active {
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.main-content {
+  display: flex;
+  flex-grow: 1;
+  gap: 20px;
+  height: calc(100vh - 100px);
+}
+
+.left-column {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-column {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-selection-list {
+  max-height: calc(100vh - 300px); 
+  overflow-y: auto;
+}
+
+mat-card {
+  height: calc(100vh - 50px); 
+  overflow-y: auto; 
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%; 
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.chart-container {
+  width: auto;
+  height: 500px;
+}
+
+canvas {
+  height: 100% !important; 
+  width: 100% !important; 
+  max-width: 100%; 
+  max-height: 100%; 
+}
+
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
